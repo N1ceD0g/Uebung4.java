@@ -14,7 +14,9 @@ public class Winkel {
         this.winkel = winkel_rad;
     }
 
-    //public double additionGrad(winkel other){
+    public double additionGrad(Winkel a, Winkel b){
+        Winkel c = a+b;
+    }
 
     }
 
