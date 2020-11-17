@@ -15,6 +15,7 @@ public class Person {
         this.gewicht = gewicht;
         this.groesse = groesse;
         BMI = (gewicht/groesse * groesse);
+        
 
     }
 }
