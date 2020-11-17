@@ -3,7 +3,6 @@ package Aufgabe6;
 public class Bruchrechnen {
     public Bruchrechnen(){}
 
-
     public Bruchzahl addieren (Bruchzahl a, Bruchzahl b){
         Bruchzahl c = new Bruchzahl();
         if (a.n != b.n){

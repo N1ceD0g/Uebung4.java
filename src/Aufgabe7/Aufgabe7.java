@@ -7,6 +7,8 @@ public class Aufgabe7 {
 
         System.out.println(A.getName());
         System.out.println(A.getAlter());
+        System.out.println(A.getGewicht());
+
 
         System.out.println(B.getName());
         System.out.println(B.getGewicht());

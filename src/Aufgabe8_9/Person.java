@@ -6,22 +6,19 @@ public class Person {
     int BMI;
 
     public Person(){
-        groesse = 1;
-        gewicht = 1;
-        BMI = (gewicht/ (groesse * groesse));
+        this.groesse = 1;
+        this.gewicht = 1;
     }
 
-    public Person (int groesse, int gewicht ){
+    public Person (int groesse, int gewicht){
         this.groesse = groesse;
         this.gewicht = gewicht;
-        BMI = (gewicht/(groesse * groesse));
+        this.BMI = (gewicht*10000/ (groesse * groesse));
     }
-
-
-
 
     public void setGroesse(int groesse){
         this.groesse = groesse;
+        calcBMI();
     }
     public int getGroesse(){
         return groesse;
@@ -29,14 +26,23 @@ public class Person {
 
     public void setGewicht(int gewicht){
         this.gewicht = gewicht;
+        calcBMI();
     }
     public int getGewicht(){
         return gewicht;
     }
 
+    public int getBMI() {
+        return this.BMI;
+    }
+
+    public void calcBMI() {
+        this.BMI = (gewicht*10000/ (groesse * groesse));
+    }
+
     public void ausgabe(){
         System.out.println("Größe: " + getGroesse());
         System.out.println("Gewicht: " + getGewicht());
-        System.out.println("BMI:" +  BMI);
+        System.out.println("BMI:" +  getBMI());
     }
 }
