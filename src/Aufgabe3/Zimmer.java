@@ -9,6 +9,7 @@ public class Zimmer {
     private int numberOfWindows;
     private int cost;
 
+
     //default Konstruktor
     public Zimmer(){
         clean = true;
@@ -27,9 +28,10 @@ public class Zimmer {
 
 
     public void ausgabe (){
-        System.out.println(clean);
-        System.out.println(space);
-        System.out.println(numberOfWindows);
-        System.out.println(cost);
+        System.out.println("Es ist sauber: "+ clean);
+        System.out.println("Es ist "+ space +" Quadratmeter groß");
+        System.out.println("Es hat " +numberOfWindows+" Fenster");
+        System.out.println("Es kostet "+ cost+" euro im Monat");
+        System.out.println();
     }
 }
