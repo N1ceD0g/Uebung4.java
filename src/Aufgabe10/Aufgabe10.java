@@ -11,7 +11,7 @@ public class Aufgabe10 {
         System.out.println(beta.getWinkelRad());
         System.out.println(beta.getWinkelGrad());
 
-        System.out.println(alpha.addieren(beta).getWinkelGrad());
+        System.out.println("addition: "+ alpha.addieren(beta).getWinkelGrad());
 
 
 
