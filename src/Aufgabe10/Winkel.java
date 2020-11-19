@@ -1,39 +1,43 @@
 package Aufgabe10;
 
 public class Winkel {
-    public double grad;
-    public double rad;
-    public double winkel;
+    public double winkel; // GRAD
 
-    public Winkel(){
-        this.winkel = 1;
+    Winkel(double wert) {
+        this.winkel = wert;
     }
 
-    public Winkel(double winkel){
-        this.winkel = winkel;
+    public void setWinkelGrad(double grad) {
+        this.winkel = grad;
     }
 
-    public void setGrad(double winkelGrd){
-        this.winkel = winkelGrd;
-    }
-  //  public double getRad(){
-    //    return winkel;
+    public void setWinkelRad(double rad) {
+        this.winkel = Math.toDegrees(rad);
     }
 
-   // public double getRad() {
-  //      return winkel;
-  //  }
+    public double getWinkelGrad() {
+        return winkel;
+    }
+
+    public double getWinkelRad() {
+        return Math.toRadians(winkel);
+    }
+
+    public Winkel addieren(Winkel other) {
+        double ergebnis = winkel + other.winkel;
+
+        while (ergebnis > 360) {
+            ergebnis = 0 + (ergebnis - 360);
+        }
+
+        return new Winkel(ergebnis);
+    }
+}
 
 
 
 
 
- //   public static Winkel addGrad(Winkel a, Winkel b){
-  //      Winkel c = a.getGrad+b.getGrad;
-  //      return c;
-  //  }
-//
-//}
 
 
 
