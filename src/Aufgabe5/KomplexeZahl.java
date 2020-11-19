@@ -7,8 +7,8 @@ public class KomplexeZahl {
 
     //StandardKonstruktor:
     public KomplexeZahl() {
-        re = 1;
-        im = 2;
+        re = 0;
+        im = 0;
     }
 
 

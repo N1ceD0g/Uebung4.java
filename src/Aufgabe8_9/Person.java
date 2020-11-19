@@ -5,10 +5,14 @@ public class Person {
     int gewicht;        // in kg
     int BMI;
 
+    public void calcBMI() {
+        this.BMI = (gewicht*10000/ (groesse * groesse));
+    }
+
     public Person(){
         this.groesse = 1;
         this.gewicht = 1;
-        this.BMI = 1;
+        calcBMI();
     }
 
     public Person (int groesse, int gewicht){
@@ -37,9 +41,6 @@ public class Person {
         return this.BMI;
     }
 
-    public void calcBMI() {
-        this.BMI = (gewicht*10000/ (groesse * groesse));
-    }
 
     public void ausgabe(){
         System.out.println("Größe: " + getGroesse());
