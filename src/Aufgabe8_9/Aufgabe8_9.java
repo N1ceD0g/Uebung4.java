@@ -6,13 +6,21 @@ public class Aufgabe8_9 {
         Person Ghandi = new Person(170,40);
 
 
-        System.out.println(Ghandi.getBMI());
+        System.out.println(Ghandi.BMI);
+        Ghandi.ausgabe();
 
-        Ghandi.setGroesse(178);
+        Ghandi.setGroesse(120);
         Ghandi.setGewicht(85);
 
-        System.out.println(Ghandi.BMI);
 
         Ghandi.ausgabe();
+
+        Ghandi.setGroesse(200);
+        Ghandi.setGroesse(100);
+
+        System.out.println(Ghandi.BMI);
+        Ghandi.ausgabe();
+
+        Ghandi.calcBMI();
     }
 }
